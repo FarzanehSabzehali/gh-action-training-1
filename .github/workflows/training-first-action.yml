@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Print Greeting
         # Here you can run scripts, commands in the shell or pre-defined actions 
-        run: echo "Hello World!"
-      - name: Print Goodby
-        run: echo "Done - Bye!"
+        run: |
+          echo "Hello World!"
+          echo "Done - Bye!"
