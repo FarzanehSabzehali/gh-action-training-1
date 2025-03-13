@@ -1,0 +1,17 @@
+name: First Training Workflow
+# The events that triggers this workflow
+# workflow_dispatch: manually trigger: it waits for user to manully starts workflow
+on: workflow_dispatch
+
+
+jobs:
+  # This is not an reserved name, we choose this name
+  first-job:
+    # The environment in wi=hich different steps will be running
+    runs-on: 	windows-latest
+    steps:
+      - name: Print Greeting
+        # Here you can run scripts, commands in the shell or pre-defined actions 
+        run: eccho "Hello World!"
+      - name: Print Goodby
+        run: echo "Done - Bye!"
